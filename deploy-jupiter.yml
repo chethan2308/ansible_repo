@@ -28,7 +28,7 @@
     - name: unzip the zip folder
       ansible.builtin.unarchive:
         src: /var/www/html/jupiter-main.zip
-        dest: /var/www/html
+        dest: /var/www/html/
         remote_src: yes
 
     - name: copy webfiles from the jupiter-main directory to the html directory
